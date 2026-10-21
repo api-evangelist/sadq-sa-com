@@ -1,25 +1,75 @@
 aid: sadq-sa-com
+
 name: Sadq Holding Limited
+
+image: https://sadq.sa/assets/images/og/og-default-1200x630.png
+
 description: 'Sadq Holding Limited is a company surfaced via the API Evangelist harvest backlog (source:
   vc-portfolio; backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/sadq-sa-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- 500-global
+
 common:
+- type: Vendors
+  url: vendors/sadq-sa-com-vendors.yml
+- type: Hosts
+  url: hosts/sadq-sa-com-hosts.yml
+- type: TermsOfService
+  url: https://sadq.sa/ar/terms
+- type: PrivacyPolicy
+  url: https://sadq.sa/ar/privacy-policy
+- type: Blog
+  url: https://sadq.sa/ar/blog
+- type: Documentation
+  url: https://docs.sadq-sa.com/
+- type: DomainSecurity
+  url: security/sadq-sa-com-domain-security.yml
 - type: Website
   url: https://sadq-sa.com
+
+apis: []
+
+x-backed-by:
+- 500-global
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://docs.sadq-sa.com/mcp
+    status: 401
+  - url: https://sadq-sa.com
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

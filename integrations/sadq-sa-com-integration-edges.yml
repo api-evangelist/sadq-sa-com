@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/sadq-sa-com/integrations
+- https://zapier.com/apps/sadq-sa/integrations
+- https://zapier.com/apps/sadq-holding-limited/integrations
+- https://n8n.io/integrations/sadq-sa-com/
+- https://n8n.io/integrations/sadq-sa/
+- https://composio.dev/toolkits/sadq-sa-com
+- https://monid.ai/tools/sadq-sa-com
+checked:
+- https://composio.dev/toolkits/sadq-sa-com
+- https://monid.ai/tools/sadq-sa-com
+- https://n8n.io/integrations/sadq-sa-com/
+- https://n8n.io/integrations/sadq-sa/
+- https://zapier.com/apps/sadq-holding-limited/integrations
+- https://zapier.com/apps/sadq-sa-com/integrations
+- https://zapier.com/apps/sadq-sa/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
